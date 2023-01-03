@@ -1,5 +1,5 @@
 require("dotenv").config();
-import { Sequelize } from "sequelize";
+import { Sequelize, DataTypes } from "sequelize";
 
 const POSTGRES_URL = process.env.DATABASE_URL as unknown as string;
 const sequelize = new Sequelize(POSTGRES_URL);
@@ -13,4 +13,4 @@ async function connectDB() {
   }
 }
 
-export { connectDB, sequelize, Sequelize };
+export { connectDB, sequelize, Sequelize, DataTypes };
