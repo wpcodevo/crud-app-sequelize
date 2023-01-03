@@ -4,3 +4,6 @@ dev-down:
 	docker-compose down
 dev-down-v:
 	docker-compose down -v
+
+start-server:
+	yarn start
