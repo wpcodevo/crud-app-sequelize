@@ -1,6 +1,6 @@
-build:
+dev:
 	docker-compose up -d
-stop:
+dev-down:
 	docker-compose down
-stop-v:
+dev-down-v:
 	docker-compose down -v
